@@ -1,21 +1,25 @@
 from tkinter import *
-from tkinter import ttk, messagebox
+from tkinter import messagebox
 
 GUI = Tk()
-GUI.title("Basic Git GitHub by Uncld Engineer")
-GUI.geometry('500x700')
+GUI.title('Hello World')
+GUI.geometry('500x500')
 
-L = Label(GUI, text="MeowZaa")
+L = Label(GUI,text='Loong Wissawakorn',font=(None,20))
+L.pack()
+L = Label(GUI,text='Uncle Engineer',font=(None,20))
+L.pack()
+L = Label(GUI,text='tardev35',font=(None,20))
+L.pack()
+L = Label(GUI,text='MeowZaa',font=(None,20))
 L.pack()
 
-L = Label(GUI, text="MeowZaa")
-L.pack()
 
-L = Label(GUI, text="MeowZaa")
-L.pack()
+def popup():
+    messagebox.showinfo('Show popup','สวัสดีจ้าาา')
 
-L = Label(GUI, text="MeowZaa")
-L.pack()
 
+B1 = Button(GUI,text='Click me!',command=popup)
+B1.pack()
 
 GUI.mainloop()
